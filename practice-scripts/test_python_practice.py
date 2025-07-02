@@ -18,6 +18,7 @@ class TestGitHubActions:
         chrome_options.add_argument("--no-sandbox")
         chrome_options.add_argument("--window-size=1420,1080")
         chrome_options.add_argument("--disable-gpu")
+        chrome_options.add_argument("--headless")
         driver = webdriver.Chrome(service=Service(), options=chrome_options)
         driver.maximize_window()
         driver.get(URL)
@@ -30,3 +31,6 @@ class TestGitHubActions:
             print("Passed!!")
         except:
             print("Failed!!")
+
+        driver.close()
+        driver.quit()
