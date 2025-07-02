@@ -7,10 +7,11 @@ from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
+from webdriver_manager.chrome import ChromeDriverManager
 
 class TestGitHubActions:
 
-    def test_githubaction_practice(self):
+    def test_setUp(self):
 
         global driver
         URL = "https://www.google.com/"
@@ -18,8 +19,8 @@ class TestGitHubActions:
         chrome_options.add_argument("--no-sandbox")
         chrome_options.add_argument("--window-size=1420,1080")
         chrome_options.add_argument("--disable-gpu")
-        chrome_options.add_argument("--headless")
-        driver = webdriver.Chrome(service=Service(), options=chrome_options)
+        chrome_options.add_argument("--headless=new")
+        driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=chrome_options)
         driver.maximize_window()
         driver.get(URL)
         time.sleep(5)
@@ -28,9 +29,11 @@ class TestGitHubActions:
 
         try:
             assert WebDriverWait(driver, timeout=30).until(EC.presence_of_element_located((By.XPATH,"//input[@aria-label='Google Search']")))
-            print("Passed!!")
+            print("Passed!! Element found")
         except:
             print("Failed!!")
+
+    def test_tearDown(self):
 
         driver.close()
         driver.quit()
