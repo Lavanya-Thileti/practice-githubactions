@@ -7,7 +7,7 @@ from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
-from webdriver_manager.chrome import ChromeDriverManager
+
 
 class TestGitHubActions:
 
@@ -20,7 +20,7 @@ class TestGitHubActions:
         chrome_options.add_argument("--window-size=1420,1080")
         chrome_options.add_argument("--disable-gpu")
         chrome_options.add_argument("--headless=new")
-        driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=chrome_options)
+        driver = webdriver.Chrome(service=Service(), options=chrome_options)
         driver.maximize_window()
         driver.get(URL)
         time.sleep(5)

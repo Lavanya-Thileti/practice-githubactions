@@ -2,4 +2,3 @@ pytest
 selenium
 ansi2html
 pytest-html
-webdriver-manager
