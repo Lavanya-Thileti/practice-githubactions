@@ -6,12 +6,13 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
-#    container:
-#      image: python
 
-    permissions:
-      pages: write
-      id-token: write
+    container:
+      image: python:3.11
+
+#    permissions:
+#      pages: write
+#      id-token: write
 
     steps:
       - name: Checkout repository
