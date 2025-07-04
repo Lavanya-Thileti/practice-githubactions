@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
 
     container:
-      image: python:3.11
+      image: rapidfort/python-chromedriver
 
 #    permissions:
 #      pages: write
