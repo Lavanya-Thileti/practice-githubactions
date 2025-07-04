@@ -5,7 +5,7 @@ on:
 
 jobs:
   test:
-    runs-on: ubuntu-latest-internal
+    runs-on: ubuntu-latest
 #    container:
 #      image: python
 
