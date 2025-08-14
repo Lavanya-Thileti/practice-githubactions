@@ -1,7 +1,10 @@
 name: Sample-Test
 
+#on:
+#  workflow_dispatch:
 on:
-  workflow_dispatch:
+  schedule:
+    - cron: "45 10 * * *"
 
 jobs:
   test:
