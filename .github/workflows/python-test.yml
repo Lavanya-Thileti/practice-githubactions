@@ -1,32 +1,36 @@
 name: Sample-Test
 
+#on:
+#  workflow_dispatch:
 on:
   schedule:
     - cron: "55 10 * * *"
-
 
 jobs:
   test:
     runs-on: ubuntu-latest
 
-    permissions:
-      pages: write
-      id-token: write
+    container:
+      image: rapidfort/python-chromedriver
+
+#    permissions:
+#      pages: write
+#      id-token: write
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: "3.13"
+#      - name: Set up Python
+#        uses: actions/setup-python@v5
+#        with:
+#          python-version: "3.13"
 
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
-
+          
       - name: Run tests and generate HTML report
         run: |
           pytest practice-scripts/test_python_practice.py --html=report.html
