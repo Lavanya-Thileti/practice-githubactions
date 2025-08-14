@@ -2,7 +2,7 @@ name: Sample-Test
 
 on:
   schedule:
-    - cron: "50 10 * * *"
+    - cron: "55 10 * * *"
 
 jobs:
   test:
