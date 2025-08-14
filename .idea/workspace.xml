@@ -1,30 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f80caa19-4d3e-4f28-9b7b-7115c9ebb5d9" name="Changes" comment="" />
+    <list default="true" id="ffee3167-26b2-4c5c-a8dc-33a0bdbd7353" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
   <component name="ProjectColorInfo"><![CDATA[{
   "customColor": "",
   "associatedIndex": 1
 }]]></component>
-  <component name="ProjectId" id="31HAP4K0RpJ6FYpPn0XsaicktDr" />
+  <component name="ProjectId" id="31HAPT8QCMNn192g5ayUDfKaJ7i" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "Merging main"
+    "RunOnceActivity.ShowReadmeOnStart": "true"
   }
 }]]></component>
   <component name="SharedIndexes">
@@ -36,11 +30,11 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="f80caa19-4d3e-4f28-9b7b-7115c9ebb5d9" name="Changes" comment="" />
-      <created>1755170600955</created>
+      <changelist id="ffee3167-26b2-4c5c-a8dc-33a0bdbd7353" name="Changes" comment="" />
+      <created>1755170601104</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1755170600955</updated>
+      <updated>1755170601104</updated>
     </task>
     <servers />
   </component>
