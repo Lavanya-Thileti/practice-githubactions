@@ -41,6 +41,3 @@ jobs:
           name: html-reports
           path: |
             report.html
-
-          
-          
