@@ -4,10 +4,10 @@ name: Sample-Test
 #  workflow_dispatch:
 on:
   schedule:
-    # Weekdays (Mon–Fri) at 1:30 PM IST (08:00 UTC)
-    - cron: "0 8 * * 1-5"
-    # Weekdays (Mon–Fri) at 8:30 PM IST (15:00 UTC)
-    - cron: "0 15 * * 1-5"
+    # Weekdays (Mon–Fri) at 1:15 PM IST (08:00 UTC)
+    - cron: "45 7 * * 1-5"
+    # Weekdays (Mon–Fri) at 8:15 PM IST (15:00 UTC)
+    - cron: "45 14 * * 1-5"
   workflow_dispatch:
 
 
